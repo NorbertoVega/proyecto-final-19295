@@ -1,0 +1,26 @@
+
+@import '_variables';
+
+.errorContainer {
+    background-color: $color-principal;
+    color: white;
+    font-size: 32px;
+    margin-top: 32px;
+    padding: 32px;
+}
+
+button {
+    a { 
+        text-decoration: none;
+        color: black;
+    }
+    a:visited {
+        color: black;
+    }
+}
+
+.error_button {
+    background-color: $color-button;
+    color: black;
+    border: $color-button;
+}

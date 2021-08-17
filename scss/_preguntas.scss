@@ -1,0 +1,66 @@
+/*Clases para Preguntas frecuentes*/
+
+@import '_variables';
+
+@mixin setColors($background, $fontColor) {
+    background-color: $background;
+    color: $fontColor;
+}
+ 
+.containerBase {
+    display: flex;
+    flex-flow: column wrap;
+    @include setFont($tamanio-titulo-seccion, 280);
+}
+
+.preguntasFrec__title {
+    @include setFont($tamanio-titulos + 1, 700);
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.comoLlegarContainer {
+    $disp: flex;
+    display: $disp;
+    
+    @if $disp == flex {
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    @include setColors($color-principal , white );
+    padding: 2rem;
+}
+
+.comoLlegarContainer__descripcion {
+   font-size: $tamanio-titulo-seccion;
+
+}
+
+.comoLlegarContainer_descripcionContainer {
+    @extend .containerBase;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    margin-right: 1rem;
+}
+
+.preguntaContainer {
+    @extend .containerBase;
+    justify-content: start;
+    margin-top: 3rem;
+    @include setColors($color-principal , white );
+    padding: 2rem;
+}
+
+.preguntasFrec__titulo {
+    @include setFont($tamanio-titulo-seccion +5, 500);
+    margin-bottom: 1rem;
+}
+
+.preguntasFrec_listas {
+    list-style: none;
+    padding-inline-start: 0;
+}

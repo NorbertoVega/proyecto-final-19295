@@ -1,0 +1,96 @@
+/*Clases para Contacto*/
+
+@import '_variables';
+
+.contacto__title {
+    @include setFont($tamanio-titulos, 700);
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.contacto__form {
+    background-color: #212529;
+    color: white;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "select select"
+                         "nombre apellido"
+                         "email ciudad"
+                         "comentarios comentarios"
+                         "newsletter newsletter"
+                         "buttons buttons";
+    justify-content: center;
+    align-items: center;
+}
+
+.form__select {
+    grid-area: select;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 64px;
+    margin-top: 32px;
+}
+
+.form__nombre {
+    grid-area: nombre;
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+    margin-bottom: 64px;
+}
+.form__apellido {
+    grid-area: apellido;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 64px;
+}
+
+.form__email {
+    grid-area: email;
+    display: flex;
+    flex-direction: column;
+    margin-right: 16px;
+    margin-bottom: 64px;
+}
+
+.form__ciudad {
+    grid-area: ciudad;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 64px;
+}
+
+.form__comentarios {
+    grid-area: comentarios;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 64px;
+}
+
+.form__newsletterContainer {
+    grid-area: newsletter;
+    display: flex;
+    margin-bottom: 64px;
+}
+
+.form__buttonsContainer {
+    grid-area: buttons;
+    display: flex;
+    align-content: flex-start;
+    word-wrap: true;
+    width: 30%;
+    margin-bottom: 64px;
+}
+
+.form__button {
+    background-color: #EEEEEE;
+    color: black;
+    border: #EEEEEE;
+    margin-right: 1rem;
+}
+
+.form__check {
+    margin-left: 1rem;
+}

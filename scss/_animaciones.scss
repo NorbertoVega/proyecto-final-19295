@@ -1,0 +1,32 @@
+/* Animaciones*/
+
+input[type="text"]:focus, input[type="email"]:focus, select:focus, option:focus {
+    font-size: 16px;
+    outline: none !important;
+    border:1px solid lightseagreen;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+textarea:focus {
+    font-size: 16px;
+    outline: none !important;
+    border:1px solid lightseagreen;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+/*button:hover,*/ input[type="reset"]:hover, input[type="checkbox"]:hover, input[type="email"]:hover, input[type="password"]:hover {
+    outline: none !important;
+    border:1px solid lightseagreen !important;
+    box-shadow: 0 0 10px #719ECE !important;
+}
+.scale div div img{
+    transition: all 1s;
+}
+
+.scale div div img:hover {
+    transform: scale(1.05, 1.05);
+}
+
+iframe {
+    transition: all 1s;
+}

@@ -1,0 +1,55 @@
+/* Etiquetas y clases del footer*/
+footer {
+    background-color: #f7efed;
+    margin-top: 32px;
+    padding: 24px;
+}
+
+.footer__title {
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.footer__container {
+    text-align: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+}
+
+.footer__redesIcons {
+    margin-top: 16px;
+}
+
+.footer__redesIcons a {
+    color: #212529;
+    margin-left: 16px;
+}
+
+.footer__linksContainer {
+    display: inline-block;
+    margin-bottom: 16px;
+    padding-top: 16px;
+}
+
+.footer__linksContainer a {
+    font-size: small;
+    margin-right: 32px;
+    color: black;
+    text-decoration: none;
+}
+
+.footer__redesIcons a:hover, .footer__linksContainer a:hover {
+    color: darkgray;   
+}
+
+.footer__designer {
+    font-size: small;
+    padding-top: 8px;
+}
+
+.footer__icons:hover {
+    color: darkgray;
+}

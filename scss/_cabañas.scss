@@ -1,0 +1,130 @@
+/*Clases para Cabañas*/
+@import '_variables';
+
+.cabaña__centrar {
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+}
+
+.mainCabañas__title {
+    margin-bottom: 32px;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.cabañaContainer {
+    display: grid;
+    grid-template-rows: 4rem 50rem;
+    grid-template-columns: 60% 40%;
+    grid-template-areas:    "titulo titulo"
+                            "images equipamiento";
+    margin-bottom: 80px; 
+    margin-left: 64px;       
+    background-color: #212529;
+    color: white;   
+    padding: 50px;           
+}
+
+.cabañaContainer__imagesContainer {
+    grid-area: images;
+    display: grid;
+    grid-template-rows: 45rem 50px;
+    grid-template-columns: 47% 25% 25%;
+    grid-template-areas:    "imagenGrande imagenMedianaIzq imagenMedianaDer"
+                            "boton boton boton";
+}
+
+.imagesContainer__imagenGrande {
+    grid-area: imagenGrande;   
+    margin-right: 8px;
+}
+
+.imagesContainer__imagenGrande img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.imagesContainer__imagenesMedianasIzq {
+    grid-area: imagenMedianaIzq;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagesContainer__imgMediana {
+    width: 100%;
+    height: 50%;
+    border-radius: 5px;
+}
+
+.imagesContainer__imgMediana--inferior {
+    padding-top: 8px;
+}
+
+.imagesContainer__imagenesMedianasDer {
+    grid-area: imagenMedianaDer;
+    display: flex;
+    flex-direction: column;
+    margin-left: 8px;
+}
+
+.cabañaContainer__equipamientoContainer {
+    grid-area: equipamiento;
+    padding-right: 32px;
+    padding-left: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.equipamientoContainer__iconsEquipContainer {
+    grid-area: imagenMedianaDer;
+    height: auto;  
+}
+
+.iconsEquipContainer__iconsContainer {
+    display: grid;
+    grid-template-rows: 50px 50px 50px;
+    grid-template-columns: 70px 200px 70px 200px;
+    row-gap: 16px;
+    margin-top: 32px;
+}
+
+.iconsContainer__labelIcon {
+    align-self: center;
+}
+
+.equipamientoContainer__equipamientoParrafo {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.equipamientoContainer__descripcionCabañaContainer {
+    margin-top: 64px;
+}
+
+.equipamientoContainer__tituloEquipamientoCabaña {
+    text-align: left;
+    margin: 0;
+    padding-bottom: 16px;
+    font-size: $tamanio-titulo-seccion ;
+    font-weight: 700;
+}
+
+.equipamientoContainer__buttonCabaña {
+    font-size: 1rem;
+    grid-area: boton;
+    margin-top: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 400px;
+    height: 3rem;
+    border-radius: 5px;
+}
+
+.cabañaContainer__tituloCabaña {
+    font-size: $tamanio-titulo-seccion +5;
+    font-weight: 500;
+    grid-area: titulo;
+}

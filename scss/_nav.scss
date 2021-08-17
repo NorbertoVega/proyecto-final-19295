@@ -1,0 +1,44 @@
+/* Etiquetas y clases del Nav*/
+
+.navbar {
+    padding-bottom: 32px;
+    padding-top: 32px;
+}
+
+.navbar-collapse {
+    margin-left: 3rem;
+}
+
+.navBar__Title {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.navbar__buttonReg {
+    background-color: #EEEEEE;
+    border: #EEEEEE;
+    color: black;
+    margin-left: 16px;
+}
+
+.login__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.login__formgroup {
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.login__button{
+    background-color: #EEEEEE;
+    border: #EEEEEE;
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}

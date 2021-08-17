@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alquiler de cabañas para uso turístico">
+    <meta name="keywords" content="cabañas, alquiler, bariloche, san carlos de bariloche">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/28894796e0.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Roboto:wght@100;400&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>La Musica Dele Parole | Cabañas</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">La Musica Dele Parolle</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cabañas.html">Cabañas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="promociones.html">Promociones</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Preguntas Frecuentes
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="preguntas-frecuentes.html#comoLlegar">Como
+                                        llegar</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="preguntas-frecuentes.html#opPago">Opciones de
+                                        pago</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li> <a class="dropdown-item" href="preguntas-frecuentes.html#reservar">Reservar
+                                        d. exterior</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="preguntas-frecuentes.html#lugares">Que lugares
+                                        visitar</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="preguntas-frecuentes.html#paradasCercanas">Paradas
+                                        cercanas</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-primary navbar__buttonReg " data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Registarse
+                            </button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="form-title text-center">
+                                                <h3>Login</h3>
+                                            </div>
+                                            <div class="d-flex flex-column text-center">
+                                                <form class="login__content">
+                                                    <div class="form-group login__formgroup">
+                                                        <input type="email" class="form-control" id="email1"
+                                                            placeholder="Your email address...">
+                                                    </div>
+                                                    <div class="form-group mg-5 login__formgroup">
+                                                        <input type="password" class="form-control" id="password1"
+                                                            placeholder="Your password...">
+                                                    </div>
+                                                    <a href="error.html" class="btn btn-primary login__button">Login</a>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="display-5 fw-bold mainCabañas__title">Cabañas</h1>
+        <section>
+            <div class="container-fluid">
+                <div class="row cabaña__centrar">
+                    <div class="col-md-11">
+                        <div class="cabañaContainer scale">
+                            <h2 class="cabañaContainer__tituloCabaña">Cabaña 1</h2>
+                            <div class="cabañaContainer__imagesContainer">
+                                <div class="imagesContainer__imagenGrande">
+                                    <img src="images/cabañas/img-cabania-1.webp"
+                                        alt="Habitación de cabaña, cama de una plaza y otra de dos plazas."
+                                        id="imgGrande1">
+                                </div>
+                                <div class="imagenesMedianasIzq">
+                                    <img src="images/cabañas/img-cabania-2.webp"
+                                        alt="Imagen mediana, Comedor de la cabaña, mes de pino circular."
+                                        class="imagesContainer__imgMediana">
+                                    <img src="images/cabañas/img-cabania-3.webp"
+                                        alt="Foto dos camas de una plaza con cocina de fondo."
+                                        class="imagesContainer__imgMediana imagesContainer__imgMediana--inferior">
+                                </div>
+                                <div class="imagesContainer__imagenesMedianasDer">
+                                    <img src="images/cabañas/img-cabania-4.webp"
+                                        alt="Living y comedor de una cabaña, mesa grande rectangular, tv de 32 pulgadas."
+                                        class="imagesContainer__imgMediana">
+                                    <img src="images/cabañas/img-cabania-5.webp"
+                                        alt="Imagen de habitación más pequeña de la cabaña."
+                                        class="imagesContainer__imgMediana imagesContainer__imgMediana--inferior">
+                                </div>
+                                <a href="error.html">
+                                    <button
+                                        class="btn btn-primary jumbotron__button equipamientoContainer__buttonCabaña">Ver
+                                        comentarios</button>
+                                </a>
+
+                            </div>
+                            <div class="cabañaContainer__equipamientoContainer">
+                                <h3 class="equipamientoContainer__tituloEquipamientoCabaña">Que ofrece este lugar</h3>
+                                <div class="equipamientoContainer__iconsEquipContainer">
+                                    <div class="iconsEquipContainer__iconsContainer">
+                                        <i class="fas fa-faucet fa-3x"></i>
+                                        <label for="" class="iconsContainer__labelIcon">Cocina</label>
+                                        <i class="fas fa-car-side fa-3x"></i>
+                                        <label for="" class="iconsContainer__labelIcon">Estacionamiento</label>
+                                        <i class="fas fa-hand-sparkles fa-3x"></i>
+                                        <label for="" class="iconsContainer__labelIcon">Lavarropas</label>
+                                        <i class="fas fa-wifi fa-3x"></i>
+                                        <label for="" class="iconsContainer__labelIcon">Wifi</label>
+                                        <i class="fas fa-tv fa-3x"></i>
+                                        <label for="" class="iconsContainer__labelIcon">Tv con cable</label>
+                                        <i class="fas fa-smog fa-3x"></i>
+                                        <label for="" class="iconsContainer__labelIcon">Det. de humo</label>
+                                    </div>
+                                </div>
+                                <div class="equipamientoContainer__descripcionCabañaContainer">
+                                    <h4 class="equipamientoContainer__tituloEquipamientoCabaña">Descripción de la cabaña
+                                    </h4>
+                                    <p class="equipamientoContainer__equipamientoParrafo">La cabaña se encuentra en
+                                        pleno centro totalmente equipada.
+                                        Tiene cocina completa: heladera con freezer, horno a gas, microondas, pava
+                                        electrica.
+                                        Cuenta con un baño completo y ante baño con pileta y espejo.
+                                        Tiene una habitación amplia con cama matrimonial y dos camas individuales.
+                                        Ademas posee otras dos camas en el living.
+                                        2 TV con cable y netflix (uno en planta alta y otro planta baja)
+                                        Cuenta con estacionamiento cerrado y parrilla.
+                                        Incluye ropa de cama y toallas.
+                                        Atendida por su dueño.</p>
+                                </div>
+                                <a href="error.html">
+                                    <button
+                                        class="btn-primary jumbotron__button equipamientoContainer__buttonCabaña">Ver
+                                        Disponibilidad</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-11">
+                        <div class="cabañaContainer scale">
+                            <h2 class="cabañaContainer__tituloCabaña">Cabaña 2</h2>
+                            <div class="cabañaContainer__imagesContainer">
+                                <div class="imagesContainer__imagenGrande">
+                                    <img src="images/cabañas/img-cabania-1.webp"
+                                        alt="Habitación de cabaña, cama de una plaza y otra de dos plazas."
+                                        id="imgGrande1">
+                                </div>
+                                <div class="imagenesMedianasIzq">
+                                    <img src="images/cabañas/img-cabania-2.webp"
+                                        alt="Imagen mediana, Comedor de la cabaña, mes de pino circular."
+                                        class="imagesContainer__imgMediana">
+                                    <img src="images/cabañas/img-cabania-3.webp"
+                                        alt="Foto dos camas de una plaza con cocina de fondo."
+                                        class="imagesContainer__imgMediana imagesContainer__imgMediana--inferior">
+                                </div>
+                                <div class="imagesContainer__imagenesMedianasDer">
+                                    <img src="images/cabañas/img-cabania-4.webp"
+                                        alt="Living y comedor de una cabaña, mesa grande rectangular, tv de 32 pulgadas."
+                                        class="imagesContainer__imgMediana">
+                                    <img src="images/cabañas/img-cabania-5.webp"
+                                        alt="Imagen de habitación más pequeña de la cabaña."
+                                        class="imagesContainer__imgMediana imagesContainer__imgMediana--inferior">
+                                </div>
+                                <a href="error.html">
+                                    <button
+                                        class="btn btn-primary jumbotron__button equipamientoContainer__buttonCabaña">Ver
+                                        comentarios</button>
+                                </a>
+                            </div>
+                            <div class="cabañaContainer__equipamientoContainer">
+                                <h3 class="equipamientoContainer__tituloEquipamientoCabaña">Que ofrece este lugar</h3>
+                                <div class="equipamientoContainer__iconsEquipContainer">
+                                    <div class="iconsEquipContainer__iconsContainer">
+                                        <i class="fas fa-faucet fa-3x"></i>
+                                        <label for="" class="iconsContainer__labelIcon">Cocina</label>
+                                        <i class="fas fa-car-side fa-3x"></i>
+                                        <label for="" class="iconsContainer__labelIcon">Estacionamiento</label>
+                                        <i class="fas fa-hand-sparkles fa-3x"></i>
+                                        <label for="" class="iconsContainer__labelIcon">Lavarropas</label>
+                                        <i class="fas fa-wifi fa-3x"></i>
+                                        <label for="" class="iconsContainer__labelIcon">Wifi</label>
+                                        <i class="fas fa-tv fa-3x"></i>
+                                        <label for="" class="iconsContainer__labelIcon">Tv con cable</label>
+                                        <i class="fas fa-smog fa-3x"></i>
+                                        <label for="" class="iconsContainer__labelIcon">Det. de humo</label>
+                                    </div>
+                                </div>
+                                <div class="equipamientoContainer__descripcionCabañaContainer">
+                                    <h4 class="equipamientoContainer__tituloEquipamientoCabaña">Descripción de la cabaña
+                                    </h4>
+                                    <p class="equipamientoContainer__equipamientoParrafo">Casa en el centro para 5
+                                        personas. Cuenta con estacionamiento y parrilla, WIFI, 2 tv smart, cocina
+                                        totalmente equipada y baño completo.
+                                        Tiene una habitacion con cama matrimonial y 2 camitas con carrito en el living.
+                                        Ademas tiene sabanas y toallas.
+                                        Atendido por su dueño.</p>
+                                </div>
+                                <a href="error.html">
+                                    <button
+                                        class="btn-primary jumbotron__button equipamientoContainer__buttonCabaña">Ver
+                                        Disponibilidad</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-11">
+                        <div class="cabañaContainer scale">
+                            <h2 class="cabañaContainer__tituloCabaña">Cabaña 3</h2>
+                            <div class="cabañaContainer__imagesContainer">
+                                <div class="imagesContainer__imagenGrande">
+                                    <img src="images/cabañas/img-cabania-1.webp"
+                                        alt="Habitación de cabaña, cama de una plaza y otra de dos plazas."
+                                        id="imgGrande1">
+                                </div>
+                                <div class="imagenesMedianasIzq">
+                                    <img src="images/cabañas/img-cabania-2.webp"
+                                        alt="Imagen mediana, Comedor de la cabaña, mes de pino circular."
+                                        class="imagesContainer__imgMediana">
+                                    <img src="images/cabañas/img-cabania-3.webp"
+                                        alt="Foto dos camas de una plaza con cocina de fondo."
+                                        class="imagesContainer__imgMediana imagesContainer__imgMediana--inferior">
+                                </div>
+                                <div class="imagesContainer__imagenesMedianasDer">
+                                    <img src="images/cabañas/img-cabania-4.webp"
+                                        alt="Living y comedor de una cabaña, mesa grande rectangular, tv de 32 pulgadas."
+                                        class="imagesContainer__imgMediana">
+                                    <img src="images/cabañas/img-cabania-5.webp"
+                                        alt="Imagen de habitación más pequeña de la cabaña."
+                                        class="imagesContainer__imgMediana imagesContainer__imgMediana--inferior">
+                                </div>
+                                <a href="error.html">
+                                    <button
+                                        class="btn btn-primary jumbotron__button equipamientoContainer__buttonCabaña">Ver
+                                        comentarios</button>
+                                </a>
+                            </div>
+                            <div class="cabañaContainer__equipamientoContainer">
+                                <h3 class="equipamientoContainer__tituloEquipamientoCabaña">Que ofrece este lugar</h3>
+                                <div class="equipamientoContainer__iconsEquipContainer">
+                                    <div class="iconsEquipContainer__iconsContainer">
+                                        <i class="fas fa-faucet fa-3x"></i>
+                                        <label for="" class="iconsContainer__labelIcon">Cocina</label>
+                                        <i class="fas fa-car-side fa-3x"></i>
+                                        <label for="" class="iconsContainer__labelIcon">Estacionamiento</label>
+                                        <i class="fas fa-hand-sparkles fa-3x"></i>
+                                        <label for="" class="iconsContainer__labelIcon">Lavarropas</label>
+                                        <i class="fas fa-wifi fa-3x"></i>
+                                        <label for="" class="iconsContainer__labelIcon">Wifi</label>
+                                        <i class="fas fa-tv fa-3x"></i>
+                                        <label for="" class="iconsContainer__labelIcon">Tv con cable</label>
+                                        <i class="fas fa-smog fa-3x"></i>
+                                        <label for="" class="iconsContainer__labelIcon">Det. de humo</label>
+                                    </div>
+                                </div>
+                                <div class="equipamientoContainer__descripcionCabañaContainer">
+                                    <h4 class="equipamientoContainer__tituloEquipamientoCabaña">Descripción de la cabaña
+                                    </h4>
+                                    <p class="equipamientoContainer__equipamientoParrafo">Mini Casa para 2 personas en
+                                        el centro de Bariloche! Tiene parrilla, estacionamiento, Tv smart de 32', WIFI,
+                                        ropa de cama y toallas.
+                                        Heladera bajo mesada, horno electrico con anafaes, pava electrica
+                                        Atendida por su dueño.</p>
+                                </div>
+                                <a href="error.html">
+                                    <button
+                                        class="btn-primary jumbotron__button equipamientoContainer__buttonCabaña">Ver
+                                        Disponibilidad</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-11">
+                        <div class="cabañaContainer scale">
+                            <h2 class="cabañaContainer__tituloCabaña">Cabaña 4</h2>
+                            <div class="cabañaContainer__imagesContainer">
+                                <div class="imagesContainer__imagenGrande">
+                                    <img src="images/cabañas/img-cabania-1.webp"
+                                        alt="Habitación de cabaña, cama de una plaza y otra de dos plazas."
+                                        id="imgGrande1">
+                                </div>
+                                <div class="imagenesMedianasIzq">
+                                    <img src="images/cabañas/img-cabania-2.webp"
+                                        alt="Imagen mediana, Comedor de la cabaña, mes de pino circular."
+                                        class="imagesContainer__imgMediana">
+                                    <img src="images/cabañas/img-cabania-3.webp"
+                                        alt="Foto dos camas de una plaza con cocina de fondo."
+                                        class="imagesContainer__imgMediana imagesContainer__imgMediana--inferior">
+                                </div>
+                                <div class="imagesContainer__imagenesMedianasDer">
+                                    <img src="images/cabañas/img-cabania-4.webp"
+                                        alt="Living y comedor de una cabaña, mesa grande rectangular, tv de 32 pulgadas."
+                                        class="imagesContainer__imgMediana">
+                                    <img src="images/cabañas/img-cabania-5.webp"
+                                        alt="Imagen de habitación más pequeña de la cabaña."
+                                        class="imagesContainer__imgMediana imagesContainer__imgMediana--inferior">
+                                </div>
+                                <a href="error.html">
+                                    <button
+                                        class="btn btn-primary jumbotron__button equipamientoContainer__buttonCabaña">Ver
+                                        comentarios</button>
+                                </a>
+                            </div>
+                            <div class="cabañaContainer__equipamientoContainer">
+                                <h3 class="equipamientoContainer__tituloEquipamientoCabaña">Que ofrece este lugar</h3>
+                                <div class="equipamientoContainer__iconsEquipContainer">
+                                    <div class="iconsEquipContainer__iconsContainer">
+                                        <i class="fas fa-faucet fa-3x"></i>
+                                        <label for="" class="iconsContainer__labelIcon">Cocina</label>
+                                        <i class="fas fa-car-side fa-3x"></i>
+                                        <label for="" class="iconsContainer__labelIcon">Estacionamiento</label>
+                                        <i class="fas fa-hand-sparkles fa-3x"></i>
+                                        <label for="" class="iconsContainer__labelIcon">Lavarropas</label>
+                                        <i class="fas fa-wifi fa-3x"></i>
+                                        <label for="" class="iconsContainer__labelIcon">Wifi</label>
+                                        <i class="fas fa-tv fa-3x"></i>
+                                        <label for="" class="iconsContainer__labelIcon">Tv con cable</label>
+                                        <i class="fas fa-smog fa-3x"></i>
+                                        <label for="" class="iconsContainer__labelIcon">Det. de humo</label>
+                                    </div>
+                                </div>
+                                <div class="equipamientoContainer__descripcionCabañaContainer">
+                                    <h4 class="equipamientoContainer__tituloEquipamientoCabaña">Descripción de la cabaña
+                                    </h4>
+                                    <p class="equipamientoContainer__equipamientoParrafo">Hermoso mono ambiente amplio
+                                        para 4 personas en pleno centro con estacionamiento privado, parque y parrilla.
+                                        Cuenta con cocina completa, Tv Smart de 32' con cable, netflix, WIFI, ropa de
+                                        cama y toallas.
+                                        Atendido por su dueño.</p>
+                                </div>
+                                <a href="error.html">
+                                    <button
+                                        class="btn-primary jumbotron__button equipamientoContainer__buttonCabaña">Ver
+                                        Disponibilidad</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <hr>
+        <div class="footer__container">
+            <h4 class="footer__title">San Carlos de Bariloche - Patagonia - Argentina</h4>
+            <div class="footer__redesIcons">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-square fa-3x footer__icons"></i></a>
+                <a href="https://www.instagram.com/?hl=es"><i
+                        class="fab fa-instagram-square fa-3x footer__icons"></i></a>
+                <a href="https://twitter.com/?lang=es"><i class="fab fa-twitter-square fa-3x footer__icons"></i></a>
+            </div>
+            <div class="footer__linksContainer">
+                <a href="index.html">Home</a>
+                <a href="cabañas.html">Cabañas</a>
+                <a href="promociones.html">Promociones</a>
+                <a href="preguntas-frecuentes.html">Preguntas Frecuentes</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div>
+                <h5 class="footer__designer">Designed by Norberto Vega</h5>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+/* Clases para Promociones*/
+
+@import '_variables';
+
+.promociones__title {
+    @include setFont($tamanio-titulos, 700);
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.display-5 {
+    @include setFont($tamanio-titulos, 700);
+
+}
+
+.promocion__descripcion {
+    @include setFont($tamanio-titulo-seccion, 280);
+
+}
+
+.promocion__titulo-secundario {
+    @include setFont($tamanio-titulo-seccion + 5, 500);
+}

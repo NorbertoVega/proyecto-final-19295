@@ -1,0 +1,139 @@
+/* Probado con un Moto g4, Galaxy S5, Pixel 2, Pixel 2XL(con la herramienta del navegador)*/
+@media (min-width: 320px) and (max-width: 480px) {
+ 
+    .jumbotron__dark {
+        padding: 1.5rem !important;
+        margin: 0.2rem !important;
+    }
+
+    .jumbotron__smallButton {
+        width: 100%;
+    }
+
+    .card__hide {
+        display: none;
+    }
+
+    .navbar__buttonReg {
+        margin-top: 16px;
+        margin-left: 0px;
+    }
+
+    .cabañaContainer {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        margin-left: 0;
+    }
+
+    .cabañaContainer__imagesContainer { 
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .imagenesMedianasIzq {
+        display: none;
+        flex-direction: column;
+    }
+    
+    .imagesContainer__imagenesMedianasDer {
+        display: none;
+        flex-direction: column;
+    }
+
+    .iconsEquipContainer__iconsContainer {
+        display: flex;
+        flex-direction: column;
+    } 
+
+    .equipamientoContainer__buttonCabaña {
+        width: 100%;
+    }
+
+    .scale div div img:hover {
+        transform: none;
+    }
+    .cabañaContainer__equipamientoContainer {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+    }
+    .equipamientoContainer__equipamientoParrafo {
+        text-align: initial;
+    }
+
+    .cabañaContainer__tituloCabaña {
+        font-size: 2rem;
+    }
+
+    .navbar-collapse {
+        margin-left: 0;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .jumbotron__button {
+        width: 100%;
+    }
+
+    .contacto__form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;  
+        width: 100%;  
+    }
+
+    .form__comentarios {
+        width: 100%;
+    }
+
+    .form__select {
+        width: 100%;
+    }
+
+    .form__nombre {
+        width: 100%;
+    }
+
+    .form__apellido {
+        width: 100%;
+    }
+
+    .form__email {
+        width: 100%;
+    }
+
+    .form__ciudad {
+        width: 100%;
+    }
+
+    .form__buttonsContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .form__button {
+        margin-bottom: 1rem;
+    }
+
+    .comoLlegarContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .comoLlegarContainer__map {
+        width: 100%;
+    }
+
+    .comoLlegarContainer_descripcionContainer {
+        width: 100%;
+    }
+
+    .iframe:hover {
+        transform: none;
+    }
+}

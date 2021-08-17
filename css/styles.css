@@ -1,0 +1,760 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #EEEEEE;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  flex-grow: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Etiquetas y clases del Nav*/
+.navbar {
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+
+.navbar-collapse {
+  margin-left: 3rem;
+}
+
+.navBar__Title {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.navbar__buttonReg {
+  background-color: #EEEEEE;
+  border: #EEEEEE;
+  color: black;
+  margin-left: 16px;
+}
+
+.login__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.login__formgroup {
+  width: 80%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.login__button {
+  background-color: #EEEEEE;
+  border: #EEEEEE;
+  color: black;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Etiquetas y clases del footer*/
+footer {
+  background-color: #f7efed;
+  margin-top: 32px;
+  padding: 24px;
+}
+
+.footer__title {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.footer__container {
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+}
+
+.footer__redesIcons {
+  margin-top: 16px;
+}
+
+.footer__redesIcons a {
+  color: #212529;
+  margin-left: 16px;
+}
+
+.footer__linksContainer {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding-top: 16px;
+}
+
+.footer__linksContainer a {
+  font-size: small;
+  margin-right: 32px;
+  color: black;
+  text-decoration: none;
+}
+
+.footer__redesIcons a:hover, .footer__linksContainer a:hover {
+  color: darkgray;
+}
+
+.footer__designer {
+  font-size: small;
+  padding-top: 8px;
+}
+
+.footer__icons:hover {
+  color: darkgray;
+}
+
+/*Clases para Home*/
+.mainHome__title {
+  margin-bottom: 32px;
+  margin-top: 32px;
+  text-align: center;
+}
+
+.jumbotron__button {
+  width: 30%;
+  display: block;
+  text-align: center;
+  background-color: #EEEEEE;
+  border: #EEEEEE;
+  color: black;
+}
+
+.jumbotron__dark {
+  background-color: #212529;
+  color: white;
+}
+
+.jumbotron__spanPrecio {
+  font-size: 16px;
+  font-weight: normal;
+  display: block;
+  margin: 16px 0px 16px 0px;
+  text-align: start;
+}
+
+.jumbotron__title {
+  font-size: 28px !important;
+  font-weight: 400 !important;
+}
+
+/*Clases para Cabañas*/
+.cabaña__centrar {
+  display: flex;
+  flex-direction: column;
+  align-items: center !important;
+}
+
+.mainCabañas__title {
+  margin-bottom: 32px;
+  margin-top: 35px;
+  text-align: center;
+}
+
+.cabañaContainer {
+  display: grid;
+  grid-template-rows: 4rem 50rem;
+  grid-template-columns: 60% 40%;
+  grid-template-areas: "titulo titulo" "images equipamiento";
+  margin-bottom: 80px;
+  margin-left: 64px;
+  background-color: #212529;
+  color: white;
+  padding: 50px;
+}
+
+.cabañaContainer__imagesContainer {
+  grid-area: images;
+  display: grid;
+  grid-template-rows: 45rem 50px;
+  grid-template-columns: 47% 25% 25%;
+  grid-template-areas: "imagenGrande imagenMedianaIzq imagenMedianaDer" "boton boton boton";
+}
+
+.imagesContainer__imagenGrande {
+  grid-area: imagenGrande;
+  margin-right: 8px;
+}
+
+.imagesContainer__imagenGrande img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.imagesContainer__imagenesMedianasIzq {
+  grid-area: imagenMedianaIzq;
+  display: flex;
+  flex-direction: column;
+}
+
+.imagesContainer__imgMediana {
+  width: 100%;
+  height: 50%;
+  border-radius: 5px;
+}
+
+.imagesContainer__imgMediana--inferior {
+  padding-top: 8px;
+}
+
+.imagesContainer__imagenesMedianasDer {
+  grid-area: imagenMedianaDer;
+  display: flex;
+  flex-direction: column;
+  margin-left: 8px;
+}
+
+.cabañaContainer__equipamientoContainer {
+  grid-area: equipamiento;
+  padding-right: 32px;
+  padding-left: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.equipamientoContainer__iconsEquipContainer {
+  grid-area: imagenMedianaDer;
+  height: auto;
+}
+
+.iconsEquipContainer__iconsContainer {
+  display: grid;
+  grid-template-rows: 50px 50px 50px;
+  grid-template-columns: 70px 200px 70px 200px;
+  row-gap: 16px;
+  margin-top: 32px;
+}
+
+.iconsContainer__labelIcon {
+  align-self: center;
+}
+
+.equipamientoContainer__equipamientoParrafo {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.equipamientoContainer__descripcionCabañaContainer {
+  margin-top: 64px;
+}
+
+.equipamientoContainer__tituloEquipamientoCabaña {
+  text-align: left;
+  margin: 0;
+  padding-bottom: 16px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.equipamientoContainer__buttonCabaña {
+  font-size: 1rem;
+  grid-area: boton;
+  margin-top: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 400px;
+  height: 3rem;
+  border-radius: 5px;
+}
+
+.cabañaContainer__tituloCabaña {
+  font-size: 25px;
+  font-weight: 500;
+  grid-area: titulo;
+}
+
+/* Clases para Promociones*/
+.promociones__title {
+  font-size: 35px !important;
+  font-weight: 700 !important;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.display-5 {
+  font-size: 35px !important;
+  font-weight: 700 !important;
+}
+
+.promocion__descripcion {
+  font-size: 20px !important;
+  font-weight: 280 !important;
+}
+
+.promocion__titulo-secundario {
+  font-size: 25px !important;
+  font-weight: 500 !important;
+}
+
+/*Clases para Preguntas frecuentes*/
+.containerBase, .comoLlegarContainer_descripcionContainer, .preguntaContainer {
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 20px !important;
+  font-weight: 280 !important;
+}
+
+.preguntasFrec__title {
+  font-size: 36px !important;
+  font-weight: 700 !important;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.comoLlegarContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #212529;
+  color: white;
+  padding: 2rem;
+}
+
+.comoLlegarContainer__descripcion {
+  font-size: 20px;
+}
+
+.comoLlegarContainer_descripcionContainer {
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  margin-right: 1rem;
+}
+
+.preguntaContainer {
+  justify-content: start;
+  margin-top: 3rem;
+  background-color: #212529;
+  color: white;
+  padding: 2rem;
+}
+
+.preguntasFrec__titulo {
+  font-size: 25px !important;
+  font-weight: 500 !important;
+  margin-bottom: 1rem;
+}
+
+.preguntasFrec_listas {
+  list-style: none;
+  padding-inline-start: 0;
+}
+
+/*Clases para Contacto*/
+.contacto__title {
+  font-size: 35px !important;
+  font-weight: 700 !important;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.contacto__form {
+  background-color: #212529;
+  color: white;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "select select" "nombre apellido" "email ciudad" "comentarios comentarios" "newsletter newsletter" "buttons buttons";
+  justify-content: center;
+  align-items: center;
+}
+
+.form__select {
+  grid-area: select;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 64px;
+  margin-top: 32px;
+}
+
+.form__nombre {
+  grid-area: nombre;
+  display: flex;
+  flex-direction: column;
+  margin-right: 16px;
+  margin-bottom: 64px;
+}
+
+.form__apellido {
+  grid-area: apellido;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 64px;
+}
+
+.form__email {
+  grid-area: email;
+  display: flex;
+  flex-direction: column;
+  margin-right: 16px;
+  margin-bottom: 64px;
+}
+
+.form__ciudad {
+  grid-area: ciudad;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 64px;
+}
+
+.form__comentarios {
+  grid-area: comentarios;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 64px;
+}
+
+.form__newsletterContainer {
+  grid-area: newsletter;
+  display: flex;
+  margin-bottom: 64px;
+}
+
+.form__buttonsContainer {
+  grid-area: buttons;
+  display: flex;
+  align-content: flex-start;
+  word-wrap: true;
+  width: 30%;
+  margin-bottom: 64px;
+}
+
+.form__button {
+  background-color: #EEEEEE;
+  color: black;
+  border: #EEEEEE;
+  margin-right: 1rem;
+}
+
+.form__check {
+  margin-left: 1rem;
+}
+
+/* Animaciones*/
+input[type="text"]:focus, input[type="email"]:focus, select:focus, option:focus {
+  font-size: 16px;
+  outline: none !important;
+  border: 1px solid lightseagreen;
+  box-shadow: 0 0 10px #719ECE;
+}
+
+textarea:focus {
+  font-size: 16px;
+  outline: none !important;
+  border: 1px solid lightseagreen;
+  box-shadow: 0 0 10px #719ECE;
+}
+
+/*button:hover,*/
+input[type="reset"]:hover, input[type="checkbox"]:hover, input[type="email"]:hover, input[type="password"]:hover {
+  outline: none !important;
+  border: 1px solid lightseagreen !important;
+  box-shadow: 0 0 10px #719ECE !important;
+}
+
+.scale div div img {
+  transition: all 1s;
+}
+
+.scale div div img:hover {
+  transform: scale(1.05, 1.05);
+}
+
+iframe {
+  transition: all 1s;
+}
+
+/* Probado con un Moto g4, Galaxy S5, Pixel 2, Pixel 2XL(con la herramienta del navegador)*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .jumbotron__dark {
+    padding: 1.5rem !important;
+    margin: 0.2rem !important;
+  }
+  .jumbotron__smallButton {
+    width: 100%;
+  }
+  .card__hide {
+    display: none;
+  }
+  .navbar__buttonReg {
+    margin-top: 16px;
+    margin-left: 0px;
+  }
+  .cabañaContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    margin-left: 0;
+  }
+  .cabañaContainer__imagesContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  .imagenesMedianasIzq {
+    display: none;
+    flex-direction: column;
+  }
+  .imagesContainer__imagenesMedianasDer {
+    display: none;
+    flex-direction: column;
+  }
+  .iconsEquipContainer__iconsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .equipamientoContainer__buttonCabaña {
+    width: 100%;
+  }
+  .scale div div img:hover {
+    transform: none;
+  }
+  .cabañaContainer__equipamientoContainer {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+  .equipamientoContainer__equipamientoParrafo {
+    text-align: initial;
+  }
+  .cabañaContainer__tituloCabaña {
+    font-size: 2rem;
+  }
+  .navbar-collapse {
+    margin-left: 0;
+  }
+  .hide {
+    display: none;
+  }
+  .jumbotron__button {
+    width: 100%;
+  }
+  .contacto__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .form__comentarios {
+    width: 100%;
+  }
+  .form__select {
+    width: 100%;
+  }
+  .form__nombre {
+    width: 100%;
+  }
+  .form__apellido {
+    width: 100%;
+  }
+  .form__email {
+    width: 100%;
+  }
+  .form__ciudad {
+    width: 100%;
+  }
+  .form__buttonsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .form__button {
+    margin-bottom: 1rem;
+  }
+  .comoLlegarContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .comoLlegarContainer__map {
+    width: 100%;
+  }
+  .comoLlegarContainer_descripcionContainer {
+    width: 100%;
+  }
+  .iframe:hover {
+    transform: none;
+  }
+}
+
+/* Probado en Ipad(768x1401) (con la herramienta del navegador)*/
+@media (min-width: 481px) and (max-width: 1023px) {
+  .jumbotron__dark {
+    padding: 1.5rem !important;
+    margin: 0.2rem !important;
+  }
+  .jumbotron__smallButton {
+    width: 100%;
+  }
+  .card__hide {
+    display: none;
+  }
+  .navbar__buttonReg {
+    margin-top: 16px;
+    margin-left: 0px;
+  }
+  .cabañaContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    margin-left: 0;
+  }
+  .cabañaContainer__imagesContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  .imagenesMedianasIzq {
+    display: none;
+    flex-direction: column;
+  }
+  .imagesContainer__imagenesMedianasDer {
+    display: none;
+    flex-direction: column;
+  }
+  .iconsEquipContainer__iconsContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .equipamientoContainer__buttonCabaña {
+    width: 100%;
+  }
+  .scale div div img:hover {
+    transform: none;
+  }
+  .cabañaContainer__equipamientoContainer {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+  .equipamientoContainer__equipamientoParrafo {
+    text-align: initial;
+  }
+  .cabañaContainer__tituloCabaña {
+    font-size: 2rem;
+  }
+  .navbar-collapse {
+    margin-left: 0;
+  }
+  .hide {
+    display: none;
+  }
+  .jumbotron__button {
+    width: 100%;
+  }
+  .contacto__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .form__comentarios {
+    width: 100%;
+  }
+  .form__select {
+    width: 100%;
+  }
+  .form__nombre {
+    width: 100%;
+  }
+  .form__apellido {
+    width: 100%;
+  }
+  .form__email {
+    width: 100%;
+  }
+  .form__ciudad {
+    width: 100%;
+  }
+  .form__buttonsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .form__button {
+    margin-bottom: 1rem;
+  }
+  .comoLlegarContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .comoLlegarContainer__map {
+    width: 100%;
+  }
+  .comoLlegarContainer_descripcionContainer {
+    width: 100%;
+  }
+  .iframe:hover {
+    transform: none;
+  }
+  .navbar__buttonReg {
+    margin-top: 8px;
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .cabañaContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    margin-left: 0;
+  }
+  .cabañaContainer__imagesContainer {
+    margin-bottom: 2rem;
+    grid-template-rows: 500px 50px;
+    grid-template-columns: 50% 25% 25%;
+  }
+}
+
+.errorContainer {
+  background-color: #212529;
+  color: white;
+  font-size: 32px;
+  margin-top: 32px;
+  padding: 32px;
+}
+
+button a {
+  text-decoration: none;
+  color: black;
+}
+
+button a:visited {
+  color: black;
+}
+
+.error_button {
+  background-color: #EEEEEE;
+  color: black;
+  border: #EEEEEE;
+}
