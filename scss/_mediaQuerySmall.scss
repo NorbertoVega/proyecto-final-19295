@@ -43,13 +43,19 @@
     }
 
     .iconsEquipContainer__iconsContainer {
-        display: flex;
-        flex-direction: column;
+        grid-template-rows: 50px 50px 50px 50px 50px 50px;
+        grid-template-columns: 70px 200px;
+        row-gap: 16px;
     } 
 
     .equipamientoContainer__buttonCabaña {
         width: 100%;
     }
+
+    .iconsContainer__labelIcon {
+        text-align: start;
+        padding-left: 24px;
+      }
 
     .scale div div img:hover {
         transform: none;

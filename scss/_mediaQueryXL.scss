@@ -1,4 +1,4 @@
-@media (min-width:1024px) and (max-width: 1440px) {
+@media (min-width:1024px) and (max-width: 1920px) {
 
     .cabañaContainer {
         display: flex;
@@ -10,7 +10,7 @@
     .cabañaContainer__imagesContainer {
         margin-bottom: 2rem;
         grid-template-rows: 500px 50px;
-        grid-template-columns: 50% 25% 25%;
+        grid-template-columns: 45% 25% 25%;
     }
   
     

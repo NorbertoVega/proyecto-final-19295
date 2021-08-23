@@ -530,11 +530,16 @@ iframe {
     flex-direction: column;
   }
   .iconsEquipContainer__iconsContainer {
-    display: flex;
-    flex-direction: column;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    grid-template-columns: 70px 200px;
+    row-gap: 16px;
   }
   .equipamientoContainer__buttonCabaña {
     width: 100%;
+  }
+  .iconsContainer__labelIcon {
+    text-align: start;
+    padding-left: 24px;
   }
   .scale div div img:hover {
     transform: none;
@@ -722,7 +727,7 @@ iframe {
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) and (max-width: 1920px) {
   .cabañaContainer {
     display: flex;
     flex-direction: column;
@@ -732,7 +737,7 @@ iframe {
   .cabañaContainer__imagesContainer {
     margin-bottom: 2rem;
     grid-template-rows: 500px 50px;
-    grid-template-columns: 50% 25% 25%;
+    grid-template-columns: 45% 25% 25%;
   }
 }
 
