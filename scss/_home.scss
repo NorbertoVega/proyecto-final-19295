@@ -12,14 +12,14 @@
     width: 30%;
     display: block;
     text-align: center;
-    background-color: #EEEEEE;
+    @include setColors(#EEEEEE, black);
     border: #EEEEEE;
-    color: black;
 }
 
 .jumbotron__dark {
     background-color: #212529;
     color: white;
+    border: $color-principal;
 }
 
 .jumbotron__spanPrecio {
@@ -32,5 +32,8 @@
 
 .jumbotron__title {
     @include setFont($tamanio-titulo-seccion +8, 400);
+}
 
+.fs-5 {
+    padding-left: 0;
 }

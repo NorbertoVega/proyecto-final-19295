@@ -20,9 +20,8 @@
     grid-template-areas:    "titulo titulo"
                             "images equipamiento";
     margin-bottom: 80px; 
-    margin-left: 64px;       
-    background-color: #212529;
-    color: white;   
+    margin-left: 64px;    
+    @include setColors($color-principal, white);  
     padding: 50px;           
 }
 
@@ -124,7 +123,7 @@
 }
 
 .cabañaContainer__tituloCabaña {
-    font-size: $tamanio-titulo-seccion +5;
+    @include setFont($tamanio-titulo-seccion + 5, 500);
     font-weight: 500;
     grid-area: titulo;
 }

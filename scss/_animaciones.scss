@@ -14,7 +14,7 @@ textarea:focus {
     box-shadow: 0 0 10px #719ECE;
 }
 
-/*button:hover,*/ input[type="reset"]:hover, input[type="checkbox"]:hover, input[type="email"]:hover, input[type="password"]:hover {
+input[type="checkbox"]:hover, input[type="email"]:hover, input[type="password"]:hover {
     outline: none !important;
     border:1px solid lightseagreen !important;
     box-shadow: 0 0 10px #719ECE !important;
@@ -24,7 +24,7 @@ textarea:focus {
 }
 
 .scale div div img:hover {
-    transform: scale(1.05, 1.05);
+    transform: scale(1.03, 1.03);
 }
 
 iframe {

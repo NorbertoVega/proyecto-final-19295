@@ -2,7 +2,6 @@
 $tamanio-titulos: 35px;
 $tamanio-titulo-seccion: 20px;
 
-
 $color-principal: #212529;
 $color-button: #EEEEEE;
 
@@ -10,4 +9,9 @@ $color-button: #EEEEEE;
 @mixin setFont($size, $weight) {
     font-size: $size !important;
     font-weight: $weight !important;
+}
+
+@mixin setColors($background, $fontColor) {
+    background-color: $background;
+    color: $fontColor;
 }

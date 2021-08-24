@@ -1,11 +1,6 @@
 /*Clases para Preguntas frecuentes*/
 
 @import '_variables';
-
-@mixin setColors($background, $fontColor) {
-    background-color: $background;
-    color: $fontColor;
-}
  
 .containerBase {
     display: flex;
@@ -36,7 +31,6 @@
 
 .comoLlegarContainer__descripcion {
    font-size: $tamanio-titulo-seccion;
-
 }
 
 .comoLlegarContainer_descripcionContainer {

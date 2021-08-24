@@ -1,4 +1,5 @@
 /* Etiquetas y clases del Nav*/
+@import '_variables';
 
 .navbar {
     padding-bottom: 32px;
@@ -10,14 +11,12 @@
 }
 
 .navBar__Title {
-    font-size: 2rem;
-    font-weight: 300;
+    @include setFont(2rem, 300);
 }
 
 .navbar__buttonReg {
-    background-color: #EEEEEE;
+    @include setColors(#EEEEEE, black);
     border: #EEEEEE;
-    color: black;
     margin-left: 16px;
 }
 
@@ -36,9 +35,8 @@
 }
 
 .login__button{
-    background-color: #EEEEEE;
+    @include setColors(#EEEEEE, black);
     border: #EEEEEE;
-    color: black;
     margin-top: 20px;
     margin-bottom: 10px;
 }

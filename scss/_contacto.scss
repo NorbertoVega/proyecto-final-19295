@@ -10,8 +10,7 @@
 }
 
 .contacto__form {
-    background-color: #212529;
-    color: white;
+    @include setColors($color-principal, white);
     padding: 3rem;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -25,48 +24,43 @@
     align-items: center;
 }
 
-.form__select {
-    grid-area: select;
+.form__base {
     display: flex;
     flex-direction: column;
     margin-bottom: 64px;
-    margin-top: 32px;
+}
+
+.form__select {
+    grid-area: select;
+    @extend .form__base;
+    margin-bottom: 64px;
 }
 
 .form__nombre {
     grid-area: nombre;
-    display: flex;
-    flex-direction: column;
+    @extend .form__base;
     margin-right: 16px;
-    margin-bottom: 64px;
 }
+
 .form__apellido {
     grid-area: apellido;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 64px;
+    @extend .form__base;
 }
 
 .form__email {
     grid-area: email;
-    display: flex;
-    flex-direction: column;
+    @extend .form__base;
     margin-right: 16px;
-    margin-bottom: 64px;
 }
 
 .form__ciudad {
     grid-area: ciudad;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 64px;
+    @extend .form__base;
 }
 
 .form__comentarios {
     grid-area: comentarios;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 64px;
+    @extend .form__base;
 }
 
 .form__newsletterContainer {
@@ -85,8 +79,7 @@
 }
 
 .form__button {
-    background-color: #EEEEEE;
-    color: black;
+    @include setColors(#EEEEEE, black);
     border: #EEEEEE;
     margin-right: 1rem;
 }
