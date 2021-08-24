@@ -1,0 +1,5 @@
+Usar estas instrucciones para compilar los archivos .scss
+
+1- npm init
+2- npm install -D node-sass nodemon
+3- compilar con: npm run watch-css
