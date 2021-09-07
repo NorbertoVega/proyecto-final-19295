@@ -2,7 +2,7 @@
 @media (min-width: 320px) and (max-width: 768px) {
  
     .jumbotron__dark {
-        padding: 1.5rem !important;
+        padding: 0.5rem !important;
         margin: 0.2rem !important;
     }
 
@@ -27,9 +27,13 @@
     }
 
     .cabañaContainer__imagesContainer { 
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 1rem;
+        display: none;
+    }
+
+    #carouselCabanias, #carouselCabanias2, #carouselCabanias3 {
+        display: block;
+        margin-top: 16px;
+        margin-bottom: 32px;
     }
 
     .imagenesMedianasIzq {
@@ -88,6 +92,8 @@
     .contacto__form {
         display: flex;
         flex-direction: column;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
         align-items: flex-start;  
         width: 100%;  
     }
@@ -119,11 +125,13 @@
     .form__buttonsContainer {
         display: flex;
         flex-direction: column;
+        align-items: center;
         width: 100%;
     }
 
     .form__button {
         margin-bottom: 1rem;
+        width: 60%;
     }
 
     .comoLlegarContainer {

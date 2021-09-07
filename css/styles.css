@@ -151,7 +151,7 @@ footer {
 }
 
 .jumbotron__spanPrecio {
-  font-size: 16px;
+  font-size: 22px;
   font-weight: normal;
   display: block;
   margin: 16px 0px 16px 0px;
@@ -192,6 +192,10 @@ footer {
   padding: 50px;
 }
 
+#carouselCabanias, #carouselCabanias2, #carouselCabanias3 {
+  display: none;
+}
+
 .cabañaContainer__imagesContainer {
   grid-area: images;
   display: grid;
@@ -224,7 +228,11 @@ footer {
 }
 
 .imagesContainer__imgMediana--inferior {
-  padding-top: 8px;
+  padding-top: 4px;
+}
+
+.imagesContainer__imgMediana--superior {
+  padding-bottom: 4px;
 }
 
 .imagesContainer__imagenesMedianasDer {
@@ -490,7 +498,7 @@ iframe {
 /* Probado con un Moto g4, Galaxy S5, Pixel 2, Pixel 2XL(con la herramienta del navegador)*/
 @media (min-width: 320px) and (max-width: 768px) {
   .jumbotron__dark {
-    padding: 1.5rem !important;
+    padding: 0.5rem !important;
     margin: 0.2rem !important;
   }
   .jumbotron__smallButton {
@@ -510,9 +518,12 @@ iframe {
     margin-left: 0;
   }
   .cabañaContainer__imagesContainer {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1rem;
+    display: none;
+  }
+  #carouselCabanias, #carouselCabanias2, #carouselCabanias3 {
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 32px;
   }
   .imagenesMedianasIzq {
     display: none;
@@ -560,6 +571,8 @@ iframe {
   .contacto__form {
     display: flex;
     flex-direction: column;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     align-items: flex-start;
     width: 100%;
   }
@@ -584,10 +597,12 @@ iframe {
   .form__buttonsContainer {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
   }
   .form__button {
     margin-bottom: 1rem;
+    width: 60%;
   }
   .comoLlegarContainer {
     display: flex;
@@ -604,8 +619,7 @@ iframe {
   }
 }
 
-/* Probado en Ipad(768x1401) (con la herramienta del navegador)*/
-@media (min-width: 769px) and (max-width: 1023px) {
+@media (min-width: 769px) and (max-width: 999px) {
   .jumbotron__dark {
     padding: 1.5rem !important;
     margin: 0.2rem !important;
@@ -720,7 +734,31 @@ iframe {
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1920px) {
+@media (min-width: 1000px) and (max-width: 1900px) {
+  .cabañaContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    margin-left: 0;
+  }
+  .cabañaContainer__imagesContainer {
+    margin-bottom: 2rem;
+    grid-template-rows: 400px 50px;
+    grid-template-columns: 50% 25% 25%;
+  }
+  .cabañaContainer__tituloCabaña {
+    font-size: 2rem;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .cabañaContainer__equipamientoContainer {
+    padding-top: 32px;
+    padding-left: 0;
+    width: 60%;
+  }
+}
+
+@media (min-width: 1920px) and (max-width: 2560px) {
   .cabañaContainer {
     display: flex;
     flex-direction: column;
@@ -730,7 +768,17 @@ iframe {
   .cabañaContainer__imagesContainer {
     margin-bottom: 2rem;
     grid-template-rows: 500px 50px;
-    grid-template-columns: 45% 25% 25%;
+    grid-template-columns: 45% 24% 24%;
+  }
+  .cabañaContainer__equipamientoContainer {
+    padding-top: 32px;
+    padding-left: 0;
+    width: 60%;
+  }
+  .cabañaContainer__tituloCabaña {
+    font-size: 2rem;
+    padding-bottom: 20px;
+    padding-top: 20px;
   }
 }
 

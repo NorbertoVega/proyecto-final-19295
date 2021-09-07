@@ -25,6 +25,10 @@
     padding: 50px;           
 }
 
+#carouselCabanias, #carouselCabanias2, #carouselCabanias3 {
+    display: none;
+}
+
 .cabañaContainer__imagesContainer {
     grid-area: images;
     display: grid;
@@ -58,7 +62,11 @@
 }
 
 .imagesContainer__imgMediana--inferior {
-    padding-top: 8px;
+    padding-top: 4px;
+}
+
+.imagesContainer__imgMediana--superior {
+    padding-bottom: 4px;
 }
 
 .imagesContainer__imagenesMedianasDer {
