@@ -33,7 +33,7 @@
     grid-area: images;
     display: grid;
     grid-template-rows: 45rem 50px;
-    grid-template-columns: 47% 25% 25%;
+    grid-template-columns: 50% 25% 25%;
     grid-template-areas:    "imagenGrande imagenMedianaIzq imagenMedianaDer"
                             "boton boton boton";
 }
